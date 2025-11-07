@@ -1,4 +1,4 @@
-Movie Catalog Application
+CineStack Curator
 
 
 
