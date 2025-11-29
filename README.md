@@ -73,25 +73,7 @@ cd Favourite-Movies-master
 npm install
 ```
 
-### Configure Environment
 
-Create a `.env` file in the project root:
-
-```bash
-REACT_APP_OMDB_KEY=your_api_key_here
-```
-
-Update the API key usage in `src/actions/index.js` to read from the env variable before pushing public code:
-
-```diff
-- const url = `https://www.omdbapi.com/?apikey=205c172a&i=${id}`;
-// replace with
-  const url = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&i=${id}`;
-
-- const url = `https://www.omdbapi.com/?i=tt3896198&apikey=205c172a&s=${movie}`;
-// replace with
-  const url = `https://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_OMDB_KEY}&s=${movie}`;
-```
 
 ### Run
 
